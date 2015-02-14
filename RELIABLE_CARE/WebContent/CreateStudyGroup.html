@@ -1,0 +1,55 @@
+<div id="CreateGroupMsg"></div>
+<div id="createMsg">
+	<p>
+		<i><u>Enter the following details to create a Study Group</u></i>
+	</p>
+</div>
+
+<form id=createStudyGroupForm>
+	<table id="createStudyGroupTable" class="studyGroupTableform">
+		<tr>
+
+			<td><label for=groupName class="formlabel">Group Name :</label></td>
+			<td><input id=groupName name=groupName type=text required
+				placeholder="Study Group Name" autofocus class="CreateStudyFields" /></td>
+		</tr>
+		
+		<tr>
+			<td><label for=dayOfStudy class="formlabel">Day :</label></td>
+			<td><select id=dayOfStudy name=dayOfStudy onChange="changeDay()"
+				class="CreateStudyFields">
+			</select></td>
+		</tr>
+		<tr>
+			<td><label for=roomNumber class="formlabel">Room Number
+					:</label></td>
+			<td><select id=roomNumber name=roomNumber
+				onChange="changeRoomNumber()"
+				class="CreateStudyFields roomNumberDropDown">
+
+			</select></td>
+		</tr>
+		
+		<tr>
+			<td><label for=startTime class="formlabel">Start Time :</label></td>
+			<td><select id=startTime name=startTime onChange="getEndTimes()"
+				class="CreateStudyFields">
+			</select></td>
+		</tr>
+		<tr>
+			<td><label for=endTime class="formlabel">End Time :</label></td>
+			<td><select id=endTime name=endTime class="CreateStudyFields">
+					
+			</select></td>
+		</tr>
+		<tr>
+
+			<td><label for=keyword class="formlabel">Keyword :</label></td>
+			<td><input id=keyword name=keyword type=text
+				placeholder="This will help in searching for the study Group"
+				class="CreateStudyFields" /></td>
+		</tr>
+	</table>
+	<button type="button" class="btn btn-primary studyGroupButton" onCLick="createStudyGroupFunc()">Create
+		Study Group</button>
+</form>
