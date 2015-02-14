@@ -72,6 +72,7 @@ public class Student {
 		studentList.add(new Student("Jimmy", "jimmy@ncsu.edu", "201400007",
 				"abcd", "1234"));
 		studentList.add(new Student("Machel","machel@ncsu.edu","20140008","abcd","1234"));
+		studentList.add(new Student("A","A@ncsu.edu","20140009","abcd","1234"));
 	}
 
 	public static Student getStudentFromId(String id) {
